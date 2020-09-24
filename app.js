@@ -49,3 +49,30 @@ subtractionButton.addEventListener('click', () => {
     subtractionResults.textContent = subSum;
 
 });
+
+const multiplyInput1 =document.getElementById('multiply-input-1')
+const multiplyInput2 =document.getElementById('multiply-input-2')
+const multiplyButton =document.getElementById('multiply-button')
+const multiplyResults =document.getElementById('multiply-results')
+
+
+multiplyButton.addEventListener('click', () => {
+    
+    console.log ('multiplyInput1');
+    
+    const multiValue1 = multiplyInput1.value;
+    const multiValue2 = multiplyInput2.value;
+
+    console.log(multiValue1, multiValue2);
+
+    const multi1AsNumber = Number(multiValue1);
+    const multi2AsNumber = Number(multiValue2);
+
+    console.log(typeof multi1AsNumber, typeof multi2AsNumber);
+
+    const multiSum = multi1AsNumber * multi2AsNumber;
+    
+    console.log(multiSum);
+
+    multiplyResults.textContent = multiSum;
+});
