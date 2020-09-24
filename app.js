@@ -23,5 +23,9 @@ addButton.addEventListener('click', () => {
     console.log(sum);
 
     addResults.textContent = sum;
-
 });
+
+const subtractionInput1 =document.getElementById('subtraction-input-1')
+const subtractionInput2 =document.getElementById('subtraction-input-2')
+const subtractionButton =document.getElementById('subtraction-button')
+const subtractionResults =document.getElementById('subtraction-results')
