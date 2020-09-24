@@ -11,7 +11,7 @@ addButton.addEventListener('click', () => {
     const value1 = addInput1.value;
     const value2 = addInput2.value;
     
-    console.log(value1, value2)
+    console.log(value1, value2);
     
     const value1AsNumber = Number(value1);
     const value2AsNumber = Number(value2);
@@ -35,6 +35,17 @@ subtractionButton.addEventListener('click', () => {
     const subValue1 = subtractionInput1.value;
     const subValue2 = subtractionInput2.value;
 
-    console.log(subValue1, subValue2)
+    console.log(subValue1, subValue2);
+
+    const sub1AsNumber = Number(subValue1);
+    const sub2AsNumber = Number(subValue2);
+
+    console.log(typeof sub1AsNumber, typeof sub2AsNumber);
+
+    const subSum = sub1AsNumber - sub2AsNumber;
+
+    console.log(subSum);
+
+    subtractionResults.textContent = subSum;
 
 });
