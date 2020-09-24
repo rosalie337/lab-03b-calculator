@@ -4,6 +4,11 @@ const addInput2 =document.getElementById('add-input-2')
 const addButton =document.getElementById('add-button')
 const addResults =document.getElementById('add-results')
 
+const subtractionInput1 =document.getElementById('subtraction-input-1')
+const subtractionInput2 =document.getElementById('subtraction-input-2')
+const subtractionButton =document.getElementById('subtraction-button')
+const subtractionResults =document.getElementById('subtraction-results')
+
 // initialize state
 // set event listeners to update state and DOM
 addButton.addEventListener('click', () => {
@@ -24,8 +29,3 @@ addButton.addEventListener('click', () => {
 
     addResults.textContent = sum;
 });
-
-const subtractionInput1 =document.getElementById('subtraction-input-1')
-const subtractionInput2 =document.getElementById('subtraction-input-2')
-const subtractionButton =document.getElementById('subtraction-button')
-const subtractionResults =document.getElementById('subtraction-results')
