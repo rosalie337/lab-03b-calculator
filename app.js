@@ -1,8 +1,8 @@
 // import functions and grab DOM elements
-const addInput1 =document.getElementById('add-input-1')
-const addInput2 =document.getElementById('add-input-2')
-const addButton =document.getElementById('add-button')
-const addResults =document.getElementById('add-results')
+const addInput1 = document.getElementById('add-input-1')
+const addInput2 = document.getElementById('add-input-2')
+const addButton = document.getElementById('add-button')
+const addResults = document.getElementById('add-results')
 
 // initialize state
 // set event listeners to update state and DOM
@@ -25,10 +25,10 @@ addButton.addEventListener('click', () => {
     addResults.textContent = sum;
 });
 
-const subtractionInput1 =document.getElementById('subtraction-input-1')
-const subtractionInput2 =document.getElementById('subtraction-input-2')
-const subtractionButton =document.getElementById('subtraction-button')
-const subtractionResults =document.getElementById('subtraction-results')
+const subtractionInput1 = document.getElementById('subtraction-input-1')
+const subtractionInput2 = document.getElementById('subtraction-input-2')
+const subtractionButton = document.getElementById('subtraction-button')
+const subtractionResults = document.getElementById('subtraction-results')
 
 subtractionButton.addEventListener('click', () => {
 
@@ -50,10 +50,10 @@ subtractionButton.addEventListener('click', () => {
 
 });
 
-const multiplyInput1 =document.getElementById('multiply-input-1')
-const multiplyInput2 =document.getElementById('multiply-input-2')
-const multiplyButton =document.getElementById('multiply-button')
-const multiplyResults =document.getElementById('multiply-results')
+const multiplyInput1 = document.getElementById('multiply-input-1')
+const multiplyInput2 = document.getElementById('multiply-input-2')
+const multiplyButton = document.getElementById('multiply-button')
+const multiplyResults = document.getElementById('multiply-results')
 
 
 multiplyButton.addEventListener('click', () => {
@@ -76,3 +76,27 @@ multiplyButton.addEventListener('click', () => {
 
     multiplyResults.textContent = multiSum;
 });
+
+const divisionInput1 = document.getElementById('division-input-1')
+const divisionInput2 = document.getElementById('division-input-2')
+const divisionButton = document.getElementById('division-button')
+const divisionResults = document.getElementById('division-results')
+
+divisionButton.addEventListener('click', () => {
+
+    const divValue1 = divisionInput1.value;
+    const divValue2 = divisionInput2.value;
+    
+    console.log(divValue1, divValue2);
+
+    const div1AsNumber = Number(divValue1);
+    const div2AsNumber = Number(divValue2);
+
+    console.log(typeof div1AsNumber, typeof div2AsNumber);
+
+    const divSum = div1AsNumber / div2AsNumber;
+    
+    console.log(divSum);
+
+    divisionResults.textContent = divSum;
+})
