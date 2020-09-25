@@ -5,10 +5,10 @@ const addInput2 = document.getElementById('add-input-2');
 const addResults = document.getElementById('add-results');
 
 export function handleAddClick () {
-    const value1 = addInput1.value1AsNumber;
-    const value2 = addInput2.value2AsNumber;
+    const value1 = addInput1.valueAsNumber;
+    const value2 = addInput2.valueAsNumber;
     
-    const sum = add(value1 + value2);
+    const sum = add(value1, value2);
     
     addResults.textContent = sum;
 }

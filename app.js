@@ -1,4 +1,3 @@
-
 // import DOM functions and grab DOM elements
 import { handleAddClick } from './clickHandlers.js';
 
