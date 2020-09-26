@@ -1,4 +1,4 @@
-import{ add, subtract, multiply } from './mathUtils.js';
+import{ add, subtract, multiply, division } from './mathUtils.js';
 
 const addInput1 = document.getElementById('add-input-1');
 const addInput2 = document.getElementById('add-input-2');
@@ -31,10 +31,23 @@ const multiplyInput2 = document.getElementById('multiply-input-2');
 const multiplyResults = document.getElementById('multiply-results');
 
 export function handleMultiClick () {
-    const multiValue1 = multiplyInput1.value;
-    const multiValue2 = multiplyInput2.value;
+    const multiValue1 = multiplyInput1.valueAsNumber;
+    const multiValue2 = multiplyInput2.valueAsNumber;
 
     const multiSum = multiply(multiValue1, multiValue2);
 
     multiplyResults.textContent = multiSum;
+}
+
+const divisionInput1 = document.getElementById('division-input-1');
+const divisionInput2 = document.getElementById('division-input-2');
+const divisionResults = document.getElementById('division-results');
+
+export function handleDivClick () {
+    const divValue1 = divisionInput1.valueAsNumber;
+    const divValue2 = divisionInput2.valueAsNumber;
+
+    const divSum = (divValue1, divValue2);
+
+    divisionResults.textContent = divSum;
 }

@@ -13,3 +13,8 @@ export function multiply(numOne, numTwo) {
     return numOne * numTwo;
 
 }
+
+export function division(numOne, numTwo) {
+    return numOne / numTwo;
+    
+}
