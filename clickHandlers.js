@@ -47,7 +47,7 @@ export function handleDivClick () {
     const divValue1 = divisionInput1.valueAsNumber;
     const divValue2 = divisionInput2.valueAsNumber;
 
-    const divSum = (divValue1, divValue2);
+    const divSum = division(divValue1, divValue2);
 
     divisionResults.textContent = divSum;
 }

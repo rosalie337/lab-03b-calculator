@@ -15,6 +15,6 @@ export function multiply(numOne, numTwo) {
 }
 
 export function division(numOne, numTwo) {
-    return numOne / numTwo;
-    
+    return (numOne / numTwo);
+
 }
